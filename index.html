@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تطبيق USDT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>مرحباً بك في تطبيق USDT</h1>
+    <ul class="menu">
+      <li><button onclick="showSection('account')">حسابي</button></li>
+      <li><button onclick="showSection('deposit')">إيداع</button></li>
+      <li><button onclick="showSection('wheel')">دولاب الحظ</button></li>
+      <li><button onclick="showSection('friends')">الأصدقاء</button></li>
+      <li><button onclick="showSection('support')">الدعم الفني</button></li>
+      <li><button onclick="showSection('details')">التفاصيل</button></li>
+      <li><button onclick="showSection('transfer')">التحويل</button></li>
+    </ul>
+
+    <div id="content">
+      <div id="account" class="section">
+        <h2>حسابي</h2>
+        <p>الرصيد: <span id="points">0</span> نقطة</p>
+        <p>USDT: <span id="usdt">0</span></p>
+        <p>التاريخ: <span id="date"></span></p>
+        <p>الساعة: <span id="time"></span></p>
+        <button onclick="goBack()">رجوع</button>
+      </div>
+      <div id="deposit" class="section"><h2>طلب إيداع</h2><p>يرجى انتظار موافقة الإدارة.</p><button onclick="goBack()">رجوع</button></div>
+      <div id="wheel" class="section">
+        <h2>دولاب الحظ</h2>
+        <button onclick="spin('daily')">فرصة يومية</button>
+        <button onclick="spin('quarter')">فرصة كل ربع ساعة</button>
+        <p id="spin-result"></p>
+        <button onclick="goBack()">رجوع</button>
+      </div>
+      <div id="friends" class="section"><h2>دعوة الأصدقاء</h2><p>شارك هذا الرابط: <code>https://example.com?ref=123</code></p><button onclick="goBack()">رجوع</button></div>
+      <div id="support" class="section"><h2>الدعم الفني</h2><textarea placeholder="اكتب رسالتك هنا..."></textarea><button>إرسال</button><button onclick="goBack()">رجوع</button></div>
+      <div id="details" class="section"><h2>التفاصيل</h2><p>هنا القوانين والإرشادات.</p><button onclick="goBack()">رجوع</button></div>
+      <div id="transfer" class="section"><h2>طلب تحويل</h2><p>يتطلب 500 نقطة (7 دولار).</p><button onclick="goBack()">رجوع</button></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

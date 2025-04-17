@@ -1,0 +1,28 @@
+body {
+  font-family: 'Tahoma', sans-serif;
+  background-color: #f4f4f4;
+  direction: rtl;
+  text-align: right;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.menu button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.section {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
